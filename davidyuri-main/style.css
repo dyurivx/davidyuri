@@ -38,3 +38,56 @@ header {
     width: 35%;
 }
 
+/*Segunda seção do meu código estilização*/
+body {
+    font-family: 'Poppins', sans-serif;
+    }
+    .escola-titulo{
+    padding: 24px 0;
+    }
+    #profissao{
+    padding: 24px 0;
+    background-color: #00ff95;
+    }
+    
+    .profissao-imagem{
+    width: 120px;
+    }
+    .profissao-icone{
+    width: 24px;
+    padding: 4px 8px;
+    }
+    .profissao-div{
+    text-align: center;
+    padding: 16px 0;
+    }
+    .profissao-titulo{
+    text-align: center;
+    padding: 50px 0;
+    }
+    .profissao-todos{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .rodape{
+    background-color: black;
+    text-align: center;
+    }
+    .rodape-imagem{
+    height: 60px;
+    padding: 12px 0;
+    }
+
+    #teste1{
+        width: 300px;
+        height: 300px;
+    }
+    
+    #teste2{
+        width: 300px;
+        height: 300px;
+    }
+    #teste3{
+        width: 300px;
+        height: 300px;
+    }
