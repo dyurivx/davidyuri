@@ -108,10 +108,10 @@ body {
     }
     
      
-      /*para telas médias, como tablet */
-     @média (max-width: 768px) {
+    
+     @media (max-width: 768px) {
          .profissao-todos {
-            grid-template-columns:1fr 1fr; /*Duas coluas em telas médias/*
-            gap: 20px; /* espaços entre o cards */
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
            }
         }
