@@ -28,7 +28,7 @@ header {
 
 .robotica {
     background-image: linear-gradient(#000000, #00ff95);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);odos
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,3 +91,27 @@ body {
         width: 300px;
         height: 300px;
     }
+    @media  (max-width: 600px){
+        .profissao-todos{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profissao-div{
+          width: 100%; 
+          max-width: 300px;
+          margin: 10px 0; 
+        }
+        profissao-div : mth-of-type(1) {
+            margin: 0 auto; 
+        } 
+    }
+    
+     
+      /*para telas médias, como tablet */
+     @média (max-width: 768px) {
+         .profissao-todos {
+            grid-template-columns:1fr 1fr; /*Duas coluas em telas médias/*
+            gap: 20px; /* espaços entre o cards */
+           }
+        }
