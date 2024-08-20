@@ -1,117 +1,136 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-color: #000000;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 24px;
 }
 
-.cabecalho-imagem{
-    width: 20%;
+.cabecalho-imagem {
+    width: 150px;
 }
 
-.cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
+.cabecalho-lista {
+    list-style-type: none;
 }
 
-.robotica-imagem {
-    width: 25%;
+.cabecalho-lista-item {
+    font-size: 18px;
 }
 
 .robotica {
     background-image: linear-gradient(#000000, #00ff95);
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px;
 }
 
-.robotica-div-conteudo{
-    width: 35%;
+.robotica-div-conteudo {
+    max-width: 500px;
+    margin-right: 20px;
+    text-align: center;
 }
 
-/*Segunda seção do meu código estilização*/
-body {
-    font-family: 'Poppins', sans-serif;
-    }
-    .escola-titulo{
-    padding: 24px 0;
-    }
-    #profissao{
-    padding: 24px 0;
+.robotica-imagem {
+    width: 100%;
+    max-width: 400px;
+}
+
+#profissao {
+    padding: 24px 20px;
     background-color: #00ff95;
-    }
-    
-    .profissao-imagem{
-    width: 120px;
-    }
-    .profissao-icone{
-    width: 24px;
-    padding: 4px 8px;
-    }
-    .profissao-div{
+}
+
+.profissao-icone{
+    width: 50px;
+    height: 50px;
+}
+
+.profissao-titulo {
     text-align: center;
-    padding: 16px 0;
-    }
-    .profissao-titulo{
-    text-align: center;
-    padding: 50px 0;
-    }
-    .profissao-todos{
+    margin-bottom: 40px;
+}
+
+.profissao-todos {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    }
-    .rodape{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.profissao-div {
+    text-align: center;
+}
+
+.profissao-imagem, .profissao-icone {
+    max-width: 100%;
+}
+
+#teste1, #teste2, #teste3 {
+    width: 100%;
+    height: auto;
+}
+
+.rodape {
     background-color: black;
     text-align: center;
-    }
-    .rodape-imagem{
+    padding: 24px 20px;
+}
+
+.rodape-imagem {
     height: 60px;
-    padding: 12px 0;
+    margin-bottom: 12px;
+}
+
+.rodape p {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .robotica {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #teste1{
-        width: 300px;
-        height: 300px;
+    .robotica-div-conteudo {
+        margin: 0;
     }
-    
-    #teste2{
-        width: 300px;
-        height: 300px;
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    #teste3{
-        width: 300px;
-        height: 300px;
+
+    .cabecalho-imagem {
+        margin-bottom: 10px;
     }
-    @media  (max-width: 600px){
-        .profissao-todos{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .profissao-div{
-          width: 100%; 
-          max-width: 300px;
-          margin: 10px 0; 
-        }
-        profissao-div: nth-of-type(1) {
-            margin: 0 auto; 
-        } 
+}
+
+@media (max-width: 600px) {
+    .profissao-todos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-     
-    
-     @media (max-width: 768px) {
-         .profissao-todos {
-            grid-template-columns: 1fr 1fr; 
-            gap: 20px; 
-           }
-        }
+
+    .profissao-div {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
